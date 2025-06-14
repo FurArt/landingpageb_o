@@ -1,0 +1,46 @@
+$header-color: #fff;
+$text-color: #1b2129;
+$link-color: #f98921;
+$header-size--h1: 36px;
+$size--h2: 32px;
+$size--h3: 18px;
+$size--p: 16px;
+$header-size: 100vh;
+$foter-text-color: #191919;
+
+* {
+  transition: all 0.3s ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family: "Manrope", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:active {
+    color: $text-color;
+  }
+}
+
+.page {
+  position: relative;
+  z-index: -2;
+  &:has(.menu:target) {
+    overflow: hidden;
+  }
+}

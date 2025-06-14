@@ -1,0 +1,21 @@
+.nav_link {
+  color: var(--text-color);
+  text-decoration: inherit;
+  font-size: 22px;
+  font-weight: 700;
+
+  &--phone {
+    padding-block: 48px;
+    font-size: 16px;
+    &:hover {
+      @include hover-link;
+    }
+  }
+
+  &--call-to-oreder {
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-underline-position: under;
+    width: fit-content;
+  }
+}
